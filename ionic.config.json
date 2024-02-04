@@ -1,0 +1,7 @@
+{
+  "name": "Remember.Me",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
