@@ -21,6 +21,7 @@ export class HomePage {
     private router: Router
 
   ) {
+    
     this.getMessage();
   }
 
