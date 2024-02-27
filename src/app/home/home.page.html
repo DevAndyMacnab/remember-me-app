@@ -1,22 +1,38 @@
+<div style="background-color: black;">
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      ¡Que hermoso dia tenemos hoy!
-    </ion-title>
+<ion-title class="subtitulo">
+  Remember.Me
+</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div style="margin: 20px;">
-    <h2>Acepta las notificaciones</h2>
-    <ion-button (click)="afiliarNotificaciones()">Aceptar Notificaciones</ion-button>
-  </div>
+<ion-grid class="ion-padding" id="grid-screen" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 90vh; ">
+  <ion-row class="ion-row">
+    <ion-img
+    class="ion-padding"
+    src="https://static.thenounproject.com/png/3309405-200.png">
 
+    </ion-img>
+  </ion-row>
+  <ion-row class="ion-row">
+    <ion-col class="titulo">
+      {{titulo}}
+    </ion-col>
+  </ion-row>
 
-<div style="margin: 12px; align-content: center;">
-  <h1>{{titulo}}</h1>
-  <p >{{contenido}}</p>
-<ion-button (click)="getMessage()">Obtener Mensaje</ion-button>
+  <ion-row class="ion-row ">
+    <ion-col class="contenido">
+      {{contenido}}
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-row">
+    <ion-col class="">
+      <ion-button fill="outline" (click)="getMessage()" color="dark">Obtener Mensaje</ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
 </div>
-
-</ion-content>

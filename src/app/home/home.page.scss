@@ -1,5 +1,5 @@
 #container {
-  text-align: center;
+  align-items: center;
 
   position: absolute;
   left: 0;
@@ -24,4 +24,32 @@
 
 #container a {
   text-decoration: none;
+}
+
+.ion-row{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  
+}
+
+.titulo{
+  font-size: 30px;
+  text-align: center;
+  color: #FFDE00;
+}
+
+.subtitulo{
+  font-size:20px;
+  text-align: center;
+
+}
+
+.contenido{
+  font-size: 20px;
+  text-align: center;
+}
+ion-button{
+  color: #FF3D00;
+}
+ion-img{
+  filter: invert(1);
 }
